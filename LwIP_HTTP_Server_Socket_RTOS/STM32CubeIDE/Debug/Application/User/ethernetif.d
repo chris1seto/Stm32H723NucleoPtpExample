@@ -1,5 +1,5 @@
 Application/User/ethernetif.o: \
- C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../../Inc/stm32h7xx_hal_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \

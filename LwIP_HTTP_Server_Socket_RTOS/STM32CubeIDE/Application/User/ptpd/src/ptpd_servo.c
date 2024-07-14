@@ -414,7 +414,7 @@ void ptpd_servo_update_clock(PtpClock *ptp_clock)
       DBG("PTPD: ptpd_servo_update_clock: one-way delay not computed\n");
   }
 
-  printf("ptpd_servo: offset from master: %li sec %li nsec, observed drift: %li %s",
+  printf("ptpd_servo: offset from master: %li sec %li nsec, observed drift: %li %s \r\n",
       ptp_clock->currentDS.offsetFromMaster.seconds,
       ptp_clock->currentDS.offsetFromMaster.nanoseconds,
       ptp_clock->observedDrift,

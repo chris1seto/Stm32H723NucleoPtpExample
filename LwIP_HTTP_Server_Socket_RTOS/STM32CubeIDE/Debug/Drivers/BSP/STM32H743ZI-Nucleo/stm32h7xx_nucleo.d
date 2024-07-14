@@ -1,6 +1,6 @@
 Drivers/BSP/STM32H743ZI-Nucleo/stm32h7xx_nucleo.o: \
- C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.c \
- C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.c \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h \
  ../../Inc/stm32h7xx_nucleo_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../../Inc/stm32h7xx_hal_conf.h \
@@ -34,8 +34,8 @@ Drivers/BSP/STM32H743ZI-Nucleo/stm32h7xx_nucleo.o: \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h:
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h
+C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo.h:
 ../../Inc/stm32h7xx_nucleo_conf.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../../Inc/stm32h7xx_hal_conf.h:
@@ -69,4 +69,4 @@ C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Drivers/BSP/STM32H7xx_Nucleo/
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h:
+C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/BSP/STM32H7xx_Nucleo/stm32h7xx_nucleo_errno.h:

@@ -168,7 +168,7 @@ SECTIONS
     . = ALIGN(8);
   } >RAM
   
-  .lwip_sec (NOLOAD) : {
+  /*.lwip_sec (NOLOAD) : {
     . = ABSOLUTE(0x30000000);
     *(.RxDescripSection) 
     
@@ -177,6 +177,19 @@ SECTIONS
     
     . = ABSOLUTE(0x30000100);
     *(.Rx_PoolSection) 
+  } >RAM_D2 AT> ROM*/
+  
+    .lwip_sec (NOLOAD) :
+  {
+    . = ABSOLUTE(0x30000000);
+    *(.RxDescripSection)
+
+    . = ABSOLUTE(0x30000200);
+    *(.TxDescripSection)
+
+    . = ABSOLUTE(0x30000400);
+    *(.Rx_PoolSection)
+
   } >RAM_D2 AT> ROM
 
   /* Remove information from the compiler libraries */

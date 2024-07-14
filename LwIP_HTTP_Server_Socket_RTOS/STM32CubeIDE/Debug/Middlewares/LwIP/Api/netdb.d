@@ -1,5 +1,5 @@
 Middlewares/LwIP/Api/netdb.o: \
- C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Middlewares/Third_Party/LwIP/src/api/netdb.c \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Middlewares/Third_Party/LwIP/src/api/netdb.c \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/netdb.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h \
  ../../Inc/lwipopts.h \

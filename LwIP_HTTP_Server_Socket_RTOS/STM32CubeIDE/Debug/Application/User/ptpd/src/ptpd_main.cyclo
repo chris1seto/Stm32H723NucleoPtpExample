@@ -1,4 +1,4 @@
 ../Application/User/ptpd/src/ptpd_main.c:22:6:ptpd_init	1
 ../Application/User/ptpd/src/ptpd_main.c:29:13:ptpd_thread	5
-../Application/User/ptpd/src/ptpd_main.c:106:6:ptpd_alert	1
-../Application/User/ptpd/src/ptpd_main.c:112:10:ptpd_get_state	1
+../Application/User/ptpd/src/ptpd_main.c:93:6:ptpd_alert	1
+../Application/User/ptpd/src/ptpd_main.c:99:10:ptpd_get_state	1

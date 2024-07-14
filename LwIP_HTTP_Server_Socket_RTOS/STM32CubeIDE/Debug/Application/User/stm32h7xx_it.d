@@ -1,5 +1,5 @@
 Application/User/stm32h7xx_it.o: \
- C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/stm32h7xx_it.c \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Src/stm32h7xx_it.c \
  ../../Inc/stm32h7xx_it.h ../../Inc/main.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../../Inc/stm32h7xx_hal_conf.h \

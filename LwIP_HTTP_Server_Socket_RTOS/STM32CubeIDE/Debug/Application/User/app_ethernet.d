@@ -1,5 +1,5 @@
 Application/User/app_ethernet.o: \
- C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/app_ethernet.c \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Src/app_ethernet.c \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h \
  ../../Inc/lwipopts.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h \
@@ -87,7 +87,12 @@ Application/User/app_ethernet.o: \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/api.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/netbuf.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ethernet.h \
- ../../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ieee.h
+ ../../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ieee.h \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src/ptpd.h \
+ ../../Drivers/CMSIS/Include/cmsis_compiler.h \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src/../../Log.h \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src/ptpd_constants.h \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src/ptpd_datatypes.h
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h:
 ../../Inc/lwipopts.h:
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h:
@@ -178,3 +183,8 @@ Application/User/app_ethernet.o: \
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/netbuf.h:
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ethernet.h:
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ieee.h:
+C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src/ptpd.h:
+../../Drivers/CMSIS/Include/cmsis_compiler.h:
+C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src/../../Log.h:
+C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src/ptpd_constants.h:
+C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src/ptpd_datatypes.h:

@@ -74,19 +74,6 @@ static void ptpd_thread(void *arg)
   // Loop forever.
   while (true)
   {
-    // If network interface is not up, then hold everything.
-    /*if (!Ethernet_LinkIsUp())
-    {
-      // Wait until the network interface comes up.
-      while (!Ethernet_LinkIsUp())
-      {
-        vTaskDelay(100);
-      }
-
-      // Network interface is now up so reinitialize.
-      ptpd_protocol_to_state(&ptp_clock, PTP_INITIALIZING);
-    }*/
-
     // Process the current state.
     do
     {

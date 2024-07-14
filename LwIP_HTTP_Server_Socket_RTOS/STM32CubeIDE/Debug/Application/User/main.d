@@ -1,5 +1,5 @@
 Application/User/main.o: \
- C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/main.c \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Src/main.c \
  ../../Inc/main.h ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../../Inc/stm32h7xx_hal_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -72,7 +72,7 @@ Application/User/main.o: \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/sys.h \
  ../../Middlewares/Third_Party/LwIP/system/arch/sys_arch.h \
  ../../Inc/httpserver_socket.h ../../Inc/app_ethernet.h \
- C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/Log.h
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/Log.h
 ../../Inc/main.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../../Inc/stm32h7xx_hal_conf.h:
@@ -147,4 +147,4 @@ Application/User/main.o: \
 ../../Middlewares/Third_Party/LwIP/system/arch/sys_arch.h:
 ../../Inc/httpserver_socket.h:
 ../../Inc/app_ethernet.h:
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/Log.h:
+C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/Log.h:

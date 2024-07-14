@@ -1,5 +1,5 @@
 Application/User/httpserver_socket.o: \
- C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/httpserver_socket.c \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Src/httpserver_socket.c \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h \
  ../../Inc/lwipopts.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h \

@@ -1,5 +1,5 @@
 Middlewares/LwIP/Netif/sys_arch.o: \
- C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Middlewares/Third_Party/LwIP/system/OS/sys_arch.c \
+ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Middlewares/Third_Party/LwIP/system/OS/sys_arch.c \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h \
  ../../Middlewares/Third_Party/LwIP/system/arch/cc.h \
