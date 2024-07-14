@@ -47,14 +47,14 @@ Application/User/main.o: \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
  ../../Inc/ethernetif.h \
- ../../Middlewares/Third_Party/LwIP/src/include/lwip/err.h \
+ ../../Middlewares/Third_Party/LwIP/src/include/lwip/netif.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h \
  ../../Inc/lwipopts.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h \
  ../../Middlewares/Third_Party/LwIP/system/arch/cc.h \
  ../../Middlewares/Third_Party/LwIP/system/arch/cpu.h \
- ../../Middlewares/Third_Party/LwIP/src/include/lwip/netif.h \
+ ../../Middlewares/Third_Party/LwIP/src/include/lwip/err.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/ip_addr.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/def.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/ip4_addr.h \
@@ -121,14 +121,14 @@ Application/User/main.o: \
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
 ../../Inc/ethernetif.h:
-../../Middlewares/Third_Party/LwIP/src/include/lwip/err.h:
+../../Middlewares/Third_Party/LwIP/src/include/lwip/netif.h:
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h:
 ../../Inc/lwipopts.h:
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/debug.h:
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/arch.h:
 ../../Middlewares/Third_Party/LwIP/system/arch/cc.h:
 ../../Middlewares/Third_Party/LwIP/system/arch/cpu.h:
-../../Middlewares/Third_Party/LwIP/src/include/lwip/netif.h:
+../../Middlewares/Third_Party/LwIP/src/include/lwip/err.h:
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/ip_addr.h:
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/def.h:
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/ip4_addr.h:

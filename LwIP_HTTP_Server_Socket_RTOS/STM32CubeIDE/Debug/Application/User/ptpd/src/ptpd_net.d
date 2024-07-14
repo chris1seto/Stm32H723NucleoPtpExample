@@ -50,7 +50,7 @@ Application/User/ptpd/src/ptpd_net.o: \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
- ../Application/User/ptpd/src/../../ethernetif.h
+ ../../Inc/ethernetif.h
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/inet.h:
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/opt.h:
 ../../Inc/lwipopts.h:
@@ -101,4 +101,4 @@ Application/User/ptpd/src/ptpd_net.o: \
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
-../Application/User/ptpd/src/../../ethernetif.h:
+../../Inc/ethernetif.h:

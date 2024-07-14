@@ -41,7 +41,7 @@ Application/User/ptpd/src/ptpd_time.o: \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
- ../Application/User/ptpd/src/../../ethernetif.h
+ ../../Inc/ethernetif.h
 ../Application/User/ptpd/src/ptpd.h:
 ../../Drivers/CMSIS/Include/cmsis_compiler.h:
 ../../Drivers/CMSIS/Include/cmsis_gcc.h:
@@ -83,4 +83,4 @@ Application/User/ptpd/src/ptpd_time.o: \
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
-../Application/User/ptpd/src/../../ethernetif.h:
+../../Inc/ethernetif.h:

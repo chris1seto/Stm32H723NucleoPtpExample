@@ -3,7 +3,7 @@
 #include "lwip/udp.h"
 #include "lwip/igmp.h"
 #include "ptpd.h"
-#include "../../ethernetif.h"
+#include "ethernetif.h"
 #include "../../Log.h"
 
 // Initialize the network queue.
@@ -178,7 +178,7 @@ bool ptpd_net_init(NetPath *net_path, PtpClock *ptp_clock)
   net_path->unicastAddr = 0;
 
   // Init general multicast IP address.
-  memcpy(addr_str, DEFAULT_PTP_DOMAIN_ADDRESS, NET_ADDRESS_LENGTH);
+  strcpy(addr_str, DEFAULT_PTP_DOMAIN_ADDRESS);
   if (!inet_aton(addr_str, &net_addr))
   {
     ERROR("PTPD: failed to encode multi-cast address: %s\n", addr_str);
@@ -190,7 +190,7 @@ bool ptpd_net_init(NetPath *net_path, PtpClock *ptp_clock)
   igmp_joingroup(&interface_addr, (ip4_addr_t *) &net_addr);
 
   // Init peer multicast IP address.
-  memcpy(addr_str, PEER_PTP_DOMAIN_ADDRESS, NET_ADDRESS_LENGTH);
+  strcpy(addr_str, PEER_PTP_DOMAIN_ADDRESS);
   if (!inet_aton(addr_str, &net_addr))
   {
     ERROR("PTPD: failed to encode peer multi-cast address: %s\n", addr_str);

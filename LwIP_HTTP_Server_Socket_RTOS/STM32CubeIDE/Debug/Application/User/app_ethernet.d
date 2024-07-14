@@ -64,7 +64,6 @@ Application/User/app_ethernet.o: \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h \
  ../../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h \
  ../../Inc/app_ethernet.h ../../Inc/ethernetif.h \
- ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../../Inc/FreeRTOSConfig.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
@@ -72,6 +71,7 @@ Application/User/app_ethernet.o: \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
@@ -154,7 +154,6 @@ Application/User/app_ethernet.o: \
 ../../Middlewares/Third_Party/LwIP/src/include/lwip/prot/udp.h:
 ../../Inc/app_ethernet.h:
 ../../Inc/ethernetif.h:
-../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../../Inc/FreeRTOSConfig.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
@@ -162,6 +161,7 @@ Application/User/app_ethernet.o: \
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:

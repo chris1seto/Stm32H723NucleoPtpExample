@@ -1,5 +1,5 @@
 #include "ptpd.h"
-#include "../../ethernetif.h"
+#include "ethernetif.h"
 
 uint32_t ptpd_get_rand(uint32_t rand_max)
 {
