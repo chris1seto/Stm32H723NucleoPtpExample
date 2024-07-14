@@ -1,0 +1,12 @@
+../Application/User/ptpd/src/ptpd_bmc.c:5:13:eui48_to_eui64	1
+../Application/User/ptpd/src/ptpd_bmc.c:18:6:ptpd_clock_init	1
+../Application/User/ptpd/src/ptpd_bmc.c:91:6:ptpd_is_same_port_identity	3
+../Application/User/ptpd/src/ptpd_bmc.c:99:6:ptpd_add_foreign	5
+../Application/User/ptpd/src/ptpd_bmc.c:151:6:ptpd_m1	1
+../Application/User/ptpd/src/ptpd_bmc.c:182:6:ptpd_m2	1
+../Application/User/ptpd/src/ptpd_bmc.c:191:6:ptpd_p1	1
+../Application/User/ptpd/src/ptpd_bmc.c:198:6:ptpd_s1	2
+../Application/User/ptpd/src/ptpd_bmc.c:251:13:ptpd_copy_d0	1
+../Application/User/ptpd/src/ptpd_bmc.c:264:15:ptpd_data_set_comparison	24
+../Application/User/ptpd/src/ptpd_bmc.c:375:16:ptpd_state_decision	6
+../Application/User/ptpd/src/ptpd_bmc.c:452:9:ptpd_bmc	3

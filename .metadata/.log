@@ -1,0 +1,62 @@
+!SESSION 2024-07-13 18:35:24.063 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\chris\ethptp
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-13 18:35:26.992
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-13 18:35:26.997
+!MESSAGE Log4j2 initialized with config file C:\Users\chris\ethptp\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-13 18:35:28.795
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-13 18:37:16.315
+!MESSAGE Indexed 'LwIP_HTTP_Server_Socket_RTOS' (77 sources, 206 headers) in 3.37 sec: 17,793 declarations; 127,540 references; 0 unresolved inclusions; 1 syntax errors; 53 unresolved names (0.036%)
+!SESSION 2024-07-13 22:50:27.223 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-13 22:51:42.985
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-13 22:51:42.989
+!MESSAGE Log4j2 initialized with config file C:\Users\chris\ethptp\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-13 22:51:46.503
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-13 22:53:00.293
+!MESSAGE Indexed 'LwIP_HTTP_Server_Socket_RTOS' (86 sources, 213 headers) in 4.23 sec: 19,135 declarations; 133,108 references; 6 unresolved inclusions; 2 syntax errors; 73 unresolved names (0.048%)
+
+!ENTRY org.eclipse.core.resources 2 2 2024-07-14 13:02:46.362
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2024-07-14 13:02:46.362
+!MESSAGE The project description file (.project) for 'LwIP_HTTP_Server_Socket_RTOS' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SESSION 2024-07-14 13:08:34.638 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-14 13:16:54.074
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-14 13:16:54.078
+!MESSAGE Log4j2 initialized with config file C:\Users\chris\ethptp\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-14 13:16:58.809
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-14 13:22:41.904
+!MESSAGE Indexed 'LwIP_HTTP_Server_Socket_RTOS' (87 sources, 218 headers) in 2.96 sec: 19,621 declarations; 135,730 references; 0 unresolved inclusions; 1 syntax errors; 71 unresolved names (0.046%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-14 13:32:05.258
+!MESSAGE Indexed 'LwIP_HTTP_Server_Socket_RTOS' (87 sources, 218 headers) in 1.84 sec: 19,721 declarations; 136,333 references; 0 unresolved inclusions; 1 syntax errors; 67 unresolved names (0.043%)

@@ -1,0 +1,8 @@
+../Application/User/ptpd/src/ptpd_arith.c:5:13:ptpd_normalize_time	16	static
+../Application/User/ptpd/src/ptpd_arith.c:23:6:ptpd_scaled_nanoseconds_to_internal_time	40	static
+../Application/User/ptpd/src/ptpd_arith.c:46:6:ptpd_from_internal_time	16	static
+../Application/User/ptpd/src/ptpd_arith.c:67:6:ptpd_to_internal_time	16	static
+../Application/User/ptpd/src/ptpd_arith.c:83:6:ptpd_add_time	24	static
+../Application/User/ptpd/src/ptpd_arith.c:92:6:ptpd_sub_time	24	static
+../Application/User/ptpd/src/ptpd_arith.c:101:6:ptpd_div2_time	16	static
+../Application/User/ptpd/src/ptpd_arith.c:112:9:ptpd_floor_log2	24	static

@@ -1,0 +1,2 @@
+../Application/User/Log.c:6:6:Log_Init	2
+../Application/User/Log.c:38:5:_write	1

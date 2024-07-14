@@ -1,0 +1,10 @@
+../Application/User/ptpd/src/ptpd.h:145:25:max	16	static
+../Application/User/ptpd/src/ptpd.h:151:25:min	16	static
+../Application/User/ptpd/src/ptpd_servo.c:4:6:ptpd_servo_init_clock	16	static
+../Application/User/ptpd/src/ptpd_servo.c:55:16:ptpd_servo_order	16	static
+../Application/User/ptpd/src/ptpd_servo.c:67:13:ptpd_servo_filter	24	static
+../Application/User/ptpd/src/ptpd_servo.c:138:6:ptpd_servo_update_offset	24	static
+../Application/User/ptpd/src/ptpd_servo.c:226:6:ptpd_servo_update_delay	24	static
+../Application/User/ptpd/src/ptpd_servo.c:268:6:ptpd_servo_update_peer_delay	40	static
+../Application/User/ptpd/src/ptpd_servo.c:301:14:state_string	16	static
+../Application/User/ptpd/src/ptpd_servo.c:319:6:ptpd_servo_update_clock	64	static
