@@ -1,43 +1,17 @@
-13:38:35 **** Incremental Build of configuration Debug for project LwIP_HTTP_Server_Socket_RTOS ****
+21:40:21 **** Incremental Build of configuration Debug for project LwIP_HTTP_Server_Socket_RTOS ****
 make -j20 all 
-arm-none-eabi-gcc "C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H723xx -DDEBUG -c -I../../Inc -I../../Src -I../../Drivers/CMSIS/Include -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/BSP/STM32H7xx_Nucleo -I../../Drivers/BSP/Components/Common -I../../Drivers/BSP/Components -I../../Middlewares/Third_Party/LwIP/src/include -I../../Middlewares/Third_Party/LwIP/system -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Middlewares/Third_Party/FreeRTOS/Source -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Utilities -I"C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src" -I"C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/ethernetif.d" -MT"Application/User/ethernetif.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Application/User/ethernetif.o"
-arm-none-eabi-gcc "C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H723xx -DDEBUG -c -I../../Inc -I../../Src -I../../Drivers/CMSIS/Include -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/BSP/STM32H7xx_Nucleo -I../../Drivers/BSP/Components/Common -I../../Drivers/BSP/Components -I../../Middlewares/Third_Party/LwIP/src/include -I../../Middlewares/Third_Party/LwIP/system -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Middlewares/Third_Party/FreeRTOS/Source -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Utilities -I"C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src" -I"C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Application/User/main.o"
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c:70:3: error: unknown type name 'PtpTime_t'
-   70 |   PtpTime_t timestamp;
-      |   ^~~~~~~~~
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c:192:32: error: unknown type name 'PtpTime_t'; did you mean 'time_t'?
-  192 | bool ethernetif_GetTxTimestamp(PtpTime_t* const timestamp, const TickType_t block_time)
-      |                                ^~~~~~~~~
-      |                                time_t
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c:205:31: error: unknown type name 'PtpTime_t'
-  205 | void ethernetif_SetTime(const PtpTime_t* ptp_time)
-      |                               ^~~~~~~~~
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c: In function 'ethernetif_SetTime':
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c:207:42: error: request for member 'tv_sec' in something not a structure or union
-  207 |   EthHandle.Instance->MACSTSUR = ptp_time->tv_sec;
-      |                                          ^~
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c:208:64: error: request for member 'tv_nsec' in something not a structure or union
-  208 |   EthHandle.Instance->MACSTNUR = NanosecondToSubsecond(ptp_time->tv_nsec);
-      |                                                                ^~
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c: At top level:
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c:220:25: error: unknown type name 'PtpTime_t'; did you mean 'time_t'?
-  220 | void ethernetif_GetTime(PtpTime_t* const ptp_time)
-      |                         ^~~~~~~~~
-      |                         time_t
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c: In function 'low_level_output':
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c:494:27: error: 'PTP_TIMESTAMP_RECORD_MAGIC' undeclared (first use in this function)
-  494 |   if (p->timestamp_sec == PTP_TIMESTAMP_RECORD_MAGIC)
-      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c:494:27: note: each undeclared identifier is reported only once for each function it appears in
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c:535:39: error: request for member 'tv_sec' in something not a structure or union
-  535 |         new_timestamp_record.timestamp.tv_sec = EthHandle.TxTimestamp.TimeStampHigh;
-      |                                       ^
-C:/Users/chris/ethptp/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c:536:39: error: request for member 'tv_nsec' in something not a structure or union
-  536 |         new_timestamp_record.timestamp.tv_nsec = SubsecondToNanosecond(EthHandle.TxTimestamp.TimeStampLow);
-      |                                       ^
-make: *** [Application/User/subdir.mk:47: Application/User/ethernetif.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j20 all" terminated with exit code 2. Build might be incomplete.
+arm-none-eabi-gcc "C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H723xx -DDEBUG -c -I../../Inc -I../../Src -I../../Drivers/CMSIS/Include -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/BSP/STM32H7xx_Nucleo -I../../Drivers/BSP/Components/Common -I../../Drivers/BSP/Components -I../../Middlewares/Third_Party/LwIP/src/include -I../../Middlewares/Third_Party/LwIP/system -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Middlewares/Third_Party/FreeRTOS/Source -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Utilities -I"C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src" -I"C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/ethernetif.d" -MT"Application/User/ethernetif.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Application/User/ethernetif.o"
+arm-none-eabi-gcc -o "LwIP_HTTP_Server_Socket_RTOS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\chris\Stm32H723NucleoPtpExample\LwIP_HTTP_Server_Socket_RTOS\STM32CubeIDE\STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LwIP_HTTP_Server_Socket_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LwIP_HTTP_Server_Socket_RTOS.elf
+ 
+arm-none-eabi-size  LwIP_HTTP_Server_Socket_RTOS.elf 
+arm-none-eabi-objdump -h -S LwIP_HTTP_Server_Socket_RTOS.elf  > "LwIP_HTTP_Server_Socket_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+ 233484	    160	  87723	 321367	  4e757	LwIP_HTTP_Server_Socket_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: LwIP_HTTP_Server_Socket_RTOS.list
+ 
 
-13:38:35 Build Failed. 11 errors, 0 warnings. (took 486ms)
+21:40:22 Build Finished. 0 errors, 0 warnings. (took 988ms)
 

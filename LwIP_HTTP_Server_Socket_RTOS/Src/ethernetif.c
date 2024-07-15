@@ -53,7 +53,7 @@
 #define ETH_TX_BUFFER_MAX             ((ETH_TX_DESC_CNT) * 2U)
 
 /*
-  Examples of subsecond increment and addend values using SysClk = 275 MHz
+  Examples of subsecond increment and addend values using SysClk = 260 MHz
 
    Addend * Increment = 2^63 / SysClk
 
@@ -61,9 +61,9 @@
 
   PTP tick: 20 ns
   Increment: 43
-  Addend: 0x2E84B2F4
+  Addend: 0x312c538a
 */
-#define PTP_ADDEND 0x2E84B2F4
+#define PTP_ADDEND 0x312c538a
 
 typedef struct
 {
@@ -950,6 +950,7 @@ void HAL_ETH_RxAllocateCallback(uint8_t **buff)
   }
   else
   {
+	  printf("AllocEr\r\n");
     RxAllocStatus = RX_ALLOC_ERROR;
     *buff = NULL;
   }

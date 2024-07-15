@@ -24,6 +24,7 @@
 #include "app_ethernet.h"
 #include "ethernetif.h"
 #include "lwip/netifapi.h"
+#include "ptpd.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -104,6 +105,8 @@ void DHCP_Thread(void* argument)
 
           BSP_LED_On(LED2);
           BSP_LED_Off(LED3);
+
+          ptpd_init();
         }
         else
         {

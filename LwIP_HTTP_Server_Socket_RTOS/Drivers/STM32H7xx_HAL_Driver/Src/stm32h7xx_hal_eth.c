@@ -1227,7 +1227,7 @@ static void ETH_UpdateDescriptor(ETH_HandleTypeDef *heth)
     __DMB();
 
     /* Set the Tail pointer address */
-    WRITE_REG(heth->Instance->DMACRDTPR, ((uint32_t)(heth->Init.RxDesc + (tailidx))));
+    WRITE_REG(heth->Instance->DMACRDTPR, 0);
 
     heth->RxDescList.RxBuildDescIdx = descidx;
     heth->RxDescList.RxBuildDescCnt = desccount;
