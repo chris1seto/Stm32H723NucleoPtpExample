@@ -274,7 +274,7 @@ static void InitMac1588v2(void)
   SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSENA);
 
   // Enable timestamping of all packets
-  //SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSENALL);
+  SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSENALL);
 
   // TODO: What setting here to *only* timestamp PTP packets?
   /*CLEAR_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSMSTRENA);
@@ -285,8 +285,7 @@ static void InitMac1588v2(void)
   //SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSIPV4ENA);
   //SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSIPV6ENA);
   //CLEAR_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSIPV4ENA);*/
-
-  SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSVER2ENA);
+  //SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSVER2ENA);
 
   // 3. Program Subsecond increment register (ETH_MACSSIR) based on the PTP clock frequency.
   WRITE_REG(EthHandle.Instance->MACSSIR, 43 << 16);
@@ -814,18 +813,13 @@ void HAL_ETH_TxCpltCallback(ETH_HandleTypeDef *heth)
   */
 void HAL_ETH_ErrorCallback(ETH_HandleTypeDef *heth)
 {
-  uint32_t error_flags;
-
-  error_flags = HAL_ETH_GetDMAError(heth);
-  printf("Ex %lx\r\n", error_flags);
-
-  if((error_flags & ETH_DMACSR_RBU) == ETH_DMACSR_RBU)
+  if((HAL_ETH_GetDMAError(heth) & ETH_DMACSR_RBU) == ETH_DMACSR_RBU)
   {
 	printf("RBU\r\n");
     osSemaphoreRelease(RxPktSemaphore);
   }
 
-  if((error_flags & ETH_DMACSR_TBU) == ETH_DMACSR_TBU)
+  if((HAL_ETH_GetDMAError(heth) & ETH_DMACSR_TBU) == ETH_DMACSR_TBU)
   {
 	printf("TBU\r\n");
     osSemaphoreRelease(TxPktSemaphore);
