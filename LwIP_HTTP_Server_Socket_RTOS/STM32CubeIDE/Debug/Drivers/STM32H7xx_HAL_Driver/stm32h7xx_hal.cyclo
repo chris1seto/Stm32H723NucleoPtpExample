@@ -1,8 +1,8 @@
-C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:134:19:HAL_Init	2
-C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:187:19:HAL_DeInit	1
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:228:13:HAL_MspInit	1
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:239:13:HAL_MspDeInit	1
+C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:187:19:HAL_DeInit	1
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:262:26:HAL_InitTick	4
+C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:134:19:HAL_Init	2
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:327:13:HAL_IncTick	1
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:338:17:HAL_GetTick	1
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:347:10:HAL_GetTickPrio	1
@@ -50,5 +50,5 @@ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/ST
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:1094:6:HAL_EXTI_EdgeConfig	3
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:1120:6:HAL_EXTI_GenerateSWInterrupt	1
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:1135:6:HAL_EXTI_D1_ClearFlag	1
-C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:1170:6:HAL_EXTI_D1_EventInputConfig	5
+C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:1170:6:HAL_EXTI_D1_EventInputConfig	7
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c:1264:6:HAL_EXTI_D3_EventInputConfig	3

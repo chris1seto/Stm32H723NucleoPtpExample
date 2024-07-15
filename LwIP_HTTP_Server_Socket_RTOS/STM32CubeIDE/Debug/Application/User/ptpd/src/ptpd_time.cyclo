@@ -1,4 +1,4 @@
 ../Application/User/ptpd/src/ptpd_time.c:4:10:ptpd_get_rand	1
 ../Application/User/ptpd/src/ptpd_time.c:9:6:ptpd_get_time	1
 ../Application/User/ptpd/src/ptpd_time.c:19:6:ptpd_set_time	1
-../Application/User/ptpd/src/ptpd_time.c:29:6:ptpd_adj_freq	3
+../Application/User/ptpd/src/ptpd_time.c:29:6:ptpd_adj_freq	1

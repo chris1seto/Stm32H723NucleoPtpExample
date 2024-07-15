@@ -1,10 +1,6 @@
-../Application/User/ptpd/src/ptpd.h:145:25:max	1
-../Application/User/ptpd/src/ptpd.h:151:25:min	1
+../Application/User/ptpd/src/ptpd_servo.c:67:13:ptpd_servo_filter	10
 ../Application/User/ptpd/src/ptpd_servo.c:4:6:ptpd_servo_init_clock	2
-../Application/User/ptpd/src/ptpd_servo.c:55:16:ptpd_servo_order	3
-../Application/User/ptpd/src/ptpd_servo.c:67:13:ptpd_servo_filter	5
-../Application/User/ptpd/src/ptpd_servo.c:138:6:ptpd_servo_update_offset	10
+../Application/User/ptpd/src/ptpd_servo.c:138:6:ptpd_servo_update_offset	9
 ../Application/User/ptpd/src/ptpd_servo.c:226:6:ptpd_servo_update_delay	3
 ../Application/User/ptpd/src/ptpd_servo.c:268:6:ptpd_servo_update_peer_delay	3
-../Application/User/ptpd/src/ptpd_servo.c:301:14:state_string	10
-../Application/User/ptpd/src/ptpd_servo.c:319:6:ptpd_servo_update_clock	12
+../Application/User/ptpd/src/ptpd_servo.c:319:6:ptpd_servo_update_clock	11

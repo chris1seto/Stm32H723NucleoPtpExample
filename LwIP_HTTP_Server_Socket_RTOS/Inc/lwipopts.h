@@ -208,8 +208,8 @@ The STM32H7xx allows computing and verifying the IP, UDP, TCP and ICMP checksums
 /** Set this to 1 to include "fsdata_custom.c" instead of "fsdata.c" for the
  * file system (to prevent changing the file included in CVS) */
 #define HTTPD_USE_CUSTOM_FSDATA   1
-#define MEMP_DEBUG LWIP_DBG_ON
-#define MEM_DEBUG LWIP_DBG_ON
+//#define MEMP_DEBUG LWIP_DBG_ON
+//#define MEM_DEBUG LWIP_DBG_ON
 
 
 /*

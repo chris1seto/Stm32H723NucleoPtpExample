@@ -1,4 +1,4 @@
-../Application/User/ptpd/src/ptpd_time.c:4:10:ptpd_get_rand	16	static
-../Application/User/ptpd/src/ptpd_time.c:9:6:ptpd_get_time	24	static
-../Application/User/ptpd/src/ptpd_time.c:19:6:ptpd_set_time	24	static
-../Application/User/ptpd/src/ptpd_time.c:29:6:ptpd_adj_freq	16	static
+../Application/User/ptpd/src/ptpd_time.c:4:10:ptpd_get_rand	0	static
+../Application/User/ptpd/src/ptpd_time.c:9:6:ptpd_get_time	16	static
+../Application/User/ptpd/src/ptpd_time.c:19:6:ptpd_set_time	16	static
+../Application/User/ptpd/src/ptpd_time.c:29:6:ptpd_adj_freq	8	static

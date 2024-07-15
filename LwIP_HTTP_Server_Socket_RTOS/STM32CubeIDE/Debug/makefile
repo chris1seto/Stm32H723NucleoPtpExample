@@ -72,7 +72,7 @@ main-build: LwIP_HTTP_Server_Socket_RTOS.elf secondary-outputs
 
 # Tool invocations
 LwIP_HTTP_Server_Socket_RTOS.elf LwIP_HTTP_Server_Socket_RTOS.map: $(OBJS) $(USER_OBJS) C:\Users\chris\Stm32H723NucleoPtpExample\LwIP_HTTP_Server_Socket_RTOS\STM32CubeIDE\STM32H723ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "LwIP_HTTP_Server_Socket_RTOS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\chris\Stm32H723NucleoPtpExample\LwIP_HTTP_Server_Socket_RTOS\STM32CubeIDE\STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LwIP_HTTP_Server_Socket_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "LwIP_HTTP_Server_Socket_RTOS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\chris\Stm32H723NucleoPtpExample\LwIP_HTTP_Server_Socket_RTOS\STM32CubeIDE\STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LwIP_HTTP_Server_Socket_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

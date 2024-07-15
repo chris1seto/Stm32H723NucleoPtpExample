@@ -542,3 +542,42 @@ org.eclipse.core.runtime.CoreException: Setup exceptions
 
 !ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-07-14 14:31:24.052
 !MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-15 11:16:26.089
+!MESSAGE Indexed 'LwIP_HTTP_Server_Socket_RTOS' (87 sources, 217 headers) in 1.79 sec: 19,736 declarations; 136,411 references; 0 unresolved inclusions; 1 syntax errors; 56 unresolved names (0.036%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-15 11:17:09.297
+!MESSAGE Indexed 'LwIP_HTTP_Server_Socket_RTOS' (87 sources, 217 headers) in 1.59 sec: 19,736 declarations; 136,411 references; 0 unresolved inclusions; 1 syntax errors; 56 unresolved names (0.036%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-15 11:17:44.073
+!MESSAGE Indexed 'LwIP_HTTP_Server_Socket_RTOS' (87 sources, 217 headers) in 1.65 sec: 19,736 declarations; 136,411 references; 0 unresolved inclusions; 1 syntax errors; 56 unresolved names (0.036%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-07-15 11:24:49.427
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 36 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-07-15 11:24:49.427
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-07-15 11:24:49.428
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 36 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-07-15 11:24:49.428
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-15 11:26:17.353
+!MESSAGE Indexed 'LwIP_HTTP_Server_Socket_RTOS' (87 sources, 217 headers) in 1.61 sec: 19,726 declarations; 136,370 references; 0 unresolved inclusions; 1 syntax errors; 56 unresolved names (0.036%)
+!SESSION 2024-07-15 12:28:43.994 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-07-15 12:28:58.683
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-07-15 12:28:58.687
+!MESSAGE Log4j2 initialized with config file C:\Users\chris\Stm32H723NucleoPtpExample\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-07-15 12:29:02.077
+!MESSAGE Started RMI Server, listening on port 41337

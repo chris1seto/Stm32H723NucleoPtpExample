@@ -1,17 +1,17 @@
-21:40:21 **** Incremental Build of configuration Debug for project LwIP_HTTP_Server_Socket_RTOS ****
+14:36:56 **** Incremental Build of configuration Debug for project LwIP_HTTP_Server_Socket_RTOS ****
 make -j20 all 
-arm-none-eabi-gcc "C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H723xx -DDEBUG -c -I../../Inc -I../../Src -I../../Drivers/CMSIS/Include -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/BSP/STM32H7xx_Nucleo -I../../Drivers/BSP/Components/Common -I../../Drivers/BSP/Components -I../../Middlewares/Third_Party/LwIP/src/include -I../../Middlewares/Third_Party/LwIP/system -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Middlewares/Third_Party/FreeRTOS/Source -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Utilities -I"C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src" -I"C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/ethernetif.d" -MT"Application/User/ethernetif.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Application/User/ethernetif.o"
-arm-none-eabi-gcc -o "LwIP_HTTP_Server_Socket_RTOS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\chris\Stm32H723NucleoPtpExample\LwIP_HTTP_Server_Socket_RTOS\STM32CubeIDE\STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LwIP_HTTP_Server_Socket_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc "C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Src/ethernetif.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H723xx -DDEBUG -c -I../../Inc -I../../Src -I../../Drivers/CMSIS/Include -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/BSP/STM32H7xx_Nucleo -I../../Drivers/BSP/Components/Common -I../../Drivers/BSP/Components -I../../Middlewares/Third_Party/LwIP/src/include -I../../Middlewares/Third_Party/LwIP/system -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Middlewares/Third_Party/FreeRTOS/Source -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Utilities -I"C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User/ptpd/src" -I"C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/STM32CubeIDE/Application/User" -O2 -ffunction-sections -fdata-sections -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/ethernetif.d" -MT"Application/User/ethernetif.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Application/User/ethernetif.o"
+arm-none-eabi-gcc -o "LwIP_HTTP_Server_Socket_RTOS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\chris\Stm32H723NucleoPtpExample\LwIP_HTTP_Server_Socket_RTOS\STM32CubeIDE\STM32H723ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LwIP_HTTP_Server_Socket_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: LwIP_HTTP_Server_Socket_RTOS.elf
  
 arm-none-eabi-size  LwIP_HTTP_Server_Socket_RTOS.elf 
 arm-none-eabi-objdump -h -S LwIP_HTTP_Server_Socket_RTOS.elf  > "LwIP_HTTP_Server_Socket_RTOS.list"
    text	   data	    bss	    dec	    hex	filename
- 233484	    160	  87723	 321367	  4e757	LwIP_HTTP_Server_Socket_RTOS.elf
+ 183936	    504	  89835	 274275	  42f63	LwIP_HTTP_Server_Socket_RTOS.elf
 Finished building: default.size.stdout
  
 Finished building: LwIP_HTTP_Server_Socket_RTOS.list
  
 
-21:40:22 Build Finished. 0 errors, 0 warnings. (took 988ms)
+14:36:57 Build Finished. 0 errors, 0 warnings. (took 1s.86ms)
 

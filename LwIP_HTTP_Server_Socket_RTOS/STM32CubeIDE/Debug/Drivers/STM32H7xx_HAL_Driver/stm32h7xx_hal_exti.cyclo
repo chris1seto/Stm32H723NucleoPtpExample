@@ -1,5 +1,5 @@
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c:170:19:HAL_EXTI_SetConfigLine	12
-C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c:374:19:HAL_EXTI_GetConfigLine	12
+C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c:374:19:HAL_EXTI_GetConfigLine	10
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c:512:19:HAL_EXTI_ClearConfigLine	6
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c:612:19:HAL_EXTI_RegisterCallback	3
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c:644:19:HAL_EXTI_GetHandle	2

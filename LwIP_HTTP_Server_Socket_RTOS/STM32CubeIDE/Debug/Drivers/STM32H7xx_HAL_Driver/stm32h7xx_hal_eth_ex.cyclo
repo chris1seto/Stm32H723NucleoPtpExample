@@ -3,7 +3,7 @@ C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/ST
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c:120:6:HAL_ETHEx_SetARPAddressMatch	1
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c:138:19:HAL_ETHEx_SetL4FilterConfig	3
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c:187:19:HAL_ETHEx_GetL4FilterConfig	3
-C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c:238:19:HAL_ETHEx_SetL3FilterConfig	6
+C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c:238:19:HAL_ETHEx_SetL3FilterConfig	5
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c:332:19:HAL_ETHEx_GetL3FilterConfig	5
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c:390:6:HAL_ETHEx_EnableL3L4Filtering	1
 C:/Users/chris/Stm32H723NucleoPtpExample/LwIP_HTTP_Server_Socket_RTOS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c:402:6:HAL_ETHEx_DisableL3L4Filtering	1

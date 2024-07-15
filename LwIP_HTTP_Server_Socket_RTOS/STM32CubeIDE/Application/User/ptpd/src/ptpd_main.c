@@ -23,7 +23,7 @@ void ptpd_init(void)
 {
   ptp_alert_event_bits = xEventGroupCreate();
 
-  xTaskCreate(ptpd_thread, "ptpd", 500, NULL, 0, NULL);
+  xTaskCreate(ptpd_thread, "ptpd", 500, NULL, 45, NULL);
 }
 
 static void ptpd_thread(void *arg)

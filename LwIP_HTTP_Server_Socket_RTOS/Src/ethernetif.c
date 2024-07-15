@@ -49,7 +49,7 @@
 #define ETH_DMA_TRANSMIT_TIMEOUT                (20U)
 
 #define ETH_RX_BUFFER_SIZE            1000U
-#define ETH_RX_BUFFER_CNT             12U
+#define ETH_RX_BUFFER_CNT             14U
 #define ETH_TX_BUFFER_MAX             ((ETH_TX_DESC_CNT) * 2U)
 
 /*
@@ -275,6 +275,8 @@ static void InitMac1588v2(void)
 
   // Enable timestamping of all packets
   SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSENALL);
+
+  // TODO: What setting here to *only* timestamp PTP packets?
   /*CLEAR_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSMSTRENA);
   SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSEVNTENA);
   //CLEAR_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_SNAPTYPSEL);
@@ -312,7 +314,21 @@ static void InitMac1588v2(void)
   EthHandle.IsPtpConfigured = HAL_ETH_PTP_CONFIGURED;
 }
 
+#define RAM_D1_BASE_ADDRESS 0x24000000UL
+#define RAM_D1_SIZE (320 * 1024)
 
+#define CACHE_ALIGNED_SIZE(x) (((x + __SCB_DCACHE_LINE_SIZE - 1 )/ __SCB_DCACHE_LINE_SIZE) * __SCB_DCACHE_LINE_SIZE)
+#define CACHE_PAD_SIZE(x) (CACHE_ALIGNED_SIZE(x) - x)
+
+static bool CacheTools_IsCachedRegion(const void* address)
+{
+  if ((uint32_t)address >= RAM_D1_BASE_ADDRESS && (uint32_t)address < RAM_D1_BASE_ADDRESS + RAM_D1_SIZE)
+  {
+    return true;
+  }
+
+  return false;
+}
 
 /*******************************************************************************
                        LL Driver Interface ( LwIP stack --> ETH)
@@ -331,6 +347,9 @@ static void low_level_init(struct netif *netif)
   ETH_MACConfigTypeDef MACConf = {0};
   ETH_DMAConfigTypeDef dma_config = {0};
   ETH_MACFilterConfigTypeDef pFilterConfig = {0};
+
+  timestamp_queue = xQueueCreate(1, sizeof(TxTimestampRecord_t));
+
   uint8_t macaddress[6]= {ETH_MAC_ADDR0, ETH_MAC_ADDR1, ETH_MAC_ADDR2, ETH_MAC_ADDR3, ETH_MAC_ADDR4, ETH_MAC_ADDR5};
   osThreadAttr_t attributes;
   EthHandle.Instance = ETH;
@@ -503,6 +522,13 @@ static err_t low_level_output(struct netif *netif, struct pbuf *p)
     if(i >= ETH_TX_DESC_CNT)
       return ERR_IF;
 
+    // In the case of a ref pbuf, we need to clean the cache if the pbuf ref point
+    // comes from a cached region of memory
+    if (CacheTools_IsCachedRegion(q->payload))
+    {
+      SCB_CleanDCache_by_Addr((uint32_t*)q->payload, CACHE_ALIGNED_SIZE(q->len));
+    }
+
     Txbuffer[i].buffer = q->payload;
     Txbuffer[i].len = q->len;
 
@@ -527,9 +553,15 @@ static err_t low_level_output(struct netif *netif, struct pbuf *p)
 
   do
   {
-    HAL_ETH_PTP_InsertTxTimestamp(&EthHandle);
+	if (is_timestamp_requested)
+	{
+		HAL_ETH_PTP_InsertTxTimestamp(&EthHandle);
+	}
+
     if(HAL_ETH_Transmit_IT(&EthHandle, &TxConfig) == HAL_OK)
     {
+      osSemaphoreAcquire( TxPktSemaphore, ETHIF_TX_TIMEOUT);
+      HAL_ETH_ReleaseTxPacket(&EthHandle);
       if (is_timestamp_requested)
       {
         new_timestamp_record.timestamp.tv_sec = EthHandle.TxTimestamp.TimeStampHigh;
@@ -557,8 +589,6 @@ static err_t low_level_output(struct netif *netif, struct pbuf *p)
       }
     }
   }while(errval == ERR_BUF);
-
-
 
   return errval;
 }
@@ -785,11 +815,13 @@ void HAL_ETH_ErrorCallback(ETH_HandleTypeDef *heth)
 {
   if((HAL_ETH_GetDMAError(heth) & ETH_DMACSR_RBU) == ETH_DMACSR_RBU)
   {
+	printf("RBU\r\n");
     osSemaphoreRelease(RxPktSemaphore);
   }
 
   if((HAL_ETH_GetDMAError(heth) & ETH_DMACSR_TBU) == ETH_DMACSR_TBU)
   {
+	printf("TBU\r\n");
     osSemaphoreRelease(TxPktSemaphore);
   }
 }
