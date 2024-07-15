@@ -33,6 +33,11 @@ ptpd_servo: offset from master: 0 sec -192966 nsec, observed drift: 3432863 PTP_
 ptpd_servo: offset from master: 0 sec -30441 nsec, observed drift: 3430961 PTP_SLAVE
 ```
 # Issues
+* The Stm32CubeH7 HAL's Eth RX timestamp retrevial is broken
+  	* Bug filed here: https://github.com/STMicroelectronics/stm32h7xx_hal_driver/issues/63
+  	* I patched it in the HAL eth driver in this project
+  	* The idea behind the patch is that if a timestamp is available for a packet, we do not return from HAL_ETH_ReadData() until we collect the timestamp
+  	* There is a buffer associated with the descriptor which ends up being used as context descriptor, but I *don't think* the descriptor needs to be rebuilt (buffer relinked) after the descriptor is used. I *think* the buffer is still associated with the descriptor, and of course it wasn't used for data, so I *think* the only thing required to do to recycle this descriptor for use again is simply returning it to DMA with the OWN bit. Is this correct?
 * The clock state oscillates between PTP_UNCALIBRATED and PTP_SLAVE
 	*  I don't really know why yet
 	* I do have a port of this project on another board where this doesn't happen. Possibly a hardware clock issue?
