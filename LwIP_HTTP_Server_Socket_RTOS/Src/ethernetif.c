@@ -274,19 +274,10 @@ static void InitMac1588v2(void)
   SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSENA);
 
   // Enable timestamping of all packets
-  //SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSENALL);
+  SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSENALL);
 
   // TODO: What setting here to *only* timestamp PTP packets?
-  /*CLEAR_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSMSTRENA);
-  SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSEVNTENA);
-  //CLEAR_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_SNAPTYPSEL);
-  //SET_BIT(EthHandle.Instance->MACTSCR, (1 << 16));
-  //SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSIPENA);
-  //SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSIPV4ENA);
-  //SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSIPV6ENA);
-  //CLEAR_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSIPV4ENA);*/
-
-  SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSVER2ENA);
+  //SET_BIT(EthHandle.Instance->MACTSCR, ETH_MACTSCR_TSVER2ENA);
 
   // 3. Program Subsecond increment register (ETH_MACSSIR) based on the PTP clock frequency.
   WRITE_REG(EthHandle.Instance->MACSSIR, 43 << 16);
