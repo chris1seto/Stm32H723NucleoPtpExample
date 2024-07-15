@@ -33,6 +33,9 @@ ptpd_servo: offset from master: 0 sec -192966 nsec, observed drift: 3432863 PTP_
 ptpd_servo: offset from master: 0 sec -30441 nsec, observed drift: 3430961 PTP_SLAVE
 ```
 # Issues
+* Tail pointer issue
+	* With the stock HAL code which is supposed to correctly implement Eth RX tailpointer calculation, reception doesn't work with timestamping enabled.
+	* In this project's Eth hal driver, I simply write the tail pointer to 0. It's not clear how the tailpointer is supposed to work and the documentation doesn't clearly explain it.
 * The Stm32CubeH7 HAL's Eth RX timestamp retrevial is broken
   	* Bug filed here: https://github.com/STMicroelectronics/stm32h7xx_hal_driver/issues/63
   	* I patched it in the HAL eth driver in this project
